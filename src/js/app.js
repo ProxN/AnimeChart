@@ -63,9 +63,9 @@ el.navLinnks.addEventListener('click', e => {
 window.addEventListener('load', () => {
 
     // 1. Get currentYear - currentSeason
-    const season = getSeason();
-     
-    seasonController(season.year,season.currentSeason);
+    // const season = getSeason();
+    seasonController('2019','summer');
+    
 
 });
 
