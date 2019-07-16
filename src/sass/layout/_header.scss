@@ -1,0 +1,175 @@
+.header {
+
+
+    background: linear-gradient(to right bottom, rgba($color-primary, 1), rgba($color-primary-dark, .8)), url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 2fr) 1fr;
+    grid-template-rows: 80px auto;
+    grid-row-gap: 2rem;
+
+    @media only screen and (max-width:$bp-medium) {
+        grid-template-rows: auto;
+    }
+
+    &__logo {
+        grid-column: 2 / 3;
+
+        font-size: 2.4rem;
+        color: $color-grey-light-1;
+        text-decoration: none;
+        font-family: $font-primary;
+        font-weight: 500;
+        align-self: flex-end;
+        margin-bottom: .5rem;
+
+        span {
+            color: $color-secondary-2;
+            font-weight: 300;
+        }
+
+        @media only screen and (max-width:$bp-medium) {
+            align-self: center;
+            margin-bottom: 0;
+            grid-column: 1 / span 2;
+            margin-left: 2rem;
+        }
+    }
+
+    &__chart {
+        align-self: flex-end;
+        justify-self: end;
+        display: grid;
+        grid-template-columns: repeat(4, min-content);
+        grid-column-gap: 3rem;
+        text-align: center;
+        @media only screen and (max-width:$bp-medium) {
+            text-align: start;
+           padding: 4rem;
+            
+        }
+        a:link,
+        a:visited {
+            font-size: 1.5rem;
+            color: $color-grey-light-1;
+            text-decoration: none;
+            font-family: $font-display;
+            opacity: .7;
+            font-weight: 400;
+
+            @media only screen and (max-width:$bp-medium) {
+               
+                font-size: 2.3rem;
+                padding: 2rem;
+            }
+
+            i {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media only screen and (max-width:$bp-medium) {
+            display: none;
+            background-color: $color-primary;
+            width: 70%;
+            position: absolute;
+            top: 0;
+            left: -500%;
+            height: 100%;
+            z-index: 4550;
+            display: flex;
+            flex-flow: column;
+        }
+    }
+
+    &__nav {
+
+        grid-row: 2/-1;
+        grid-column: 2/ span 2;
+        justify-self: center;
+        align-self: flex-end;
+
+        &--wrap {
+            display: grid;
+            grid-template-columns: repeat(4, min-content);
+            grid-column-gap: 2rem;
+            text-align: center;
+            padding: 2rem 4rem;
+            transform: translateY(50%);
+            background-color: $color-primary;
+            box-shadow: -.5rem -.5rem 3rem rgba($color-primary-dark, .9), .5rem .5rem 3rem rgba($color-primary-dark, .9);
+            border-radius: 3px;
+
+            @media only screen and (max-width:$bp-medium) {
+
+                box-shadow: none;
+                border-radius: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            a:focus{
+                outline: none;
+            }
+            a:link,
+            a:visited {
+                font-size: 1.5rem;
+                color: $color-grey-light-1;
+                text-decoration: none;
+                opacity: .7;
+                font-family: $font-display;
+                line-height: 1.6;
+                transition: all .3s;
+
+                i {
+                    display: block;
+                }
+
+              
+            }
+            a:hover{
+                color: $color-secondary-2;
+            }
+            a.active {
+                color: $color-secondary-2;
+                opacity: .8;
+            }
+        }
+
+        @media only screen and (max-width:$bp-medium) {
+            position: fixed;
+            bottom: 0;
+            z-index: 400;
+            width: 100%;
+            justify-self: center;
+            box-shadow: none;
+            transform: translateY(-50%);
+
+        }
+    }
+}
+
+
+.toggleMenu {
+    grid-column: 4 /5;
+
+    justify-self: center;
+
+    align-self: center;
+
+    a {
+        display: none;
+
+        color: $color-grey-light-1;
+        font-size: 5rem;
+
+        @media only screen and (max-width:$bp-medium) {
+            display: block;
+
+
+        }
+    }
+}

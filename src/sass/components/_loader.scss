@@ -1,0 +1,18 @@
+.loader {
+    margin: 5rem auto;
+    text-align: center; 
+    justify-self: center;
+    grid-column: full-start / full-end;
+  }
+    .loader svg {
+      height:8rem;
+      width: 8rem;
+      fill: #ffffff;
+      transform-origin: 44% 50%;
+    }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0); }
+    100% {
+      transform: rotate(360deg); } }

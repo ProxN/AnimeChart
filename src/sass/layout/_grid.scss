@@ -1,0 +1,23 @@
+.grid-container{
+
+    display: grid;
+    grid-template-rows: minmax(min-content,22vh) repeat(3,min-content);
+    grid-template-columns: [full-start] minmax(6rem,1fr) repeat(10,[col-start] minmax(min-content,18rem) [col-end]) minmax(6rem,1fr) [full-end];
+    grid-row-gap: 6rem;
+    @media only screen and (max-width:$bp-medium){
+        grid-template-rows: 64px repeat(3,min-content);
+      
+    }
+    
+}
+
+
+.main-content{
+    grid-template-columns: [full-start] minmax(6rem,1fr) repeat(10,[col-start] minmax(min-content,18rem) [col-end]) minmax(6rem,1fr) [full-end];
+    grid-column: full-start / full-end;
+    display: grid;
+    @media only screen and (max-width:$bp-medium){
+      
+      
+      }
+}

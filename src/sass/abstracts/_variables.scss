@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Montserrat:300,400,500');
+
+// COLOR VARIABLES
+$color-primary: #20245A;
+$color-primary-dark: #171a41;
+
+$color-secondary: #64D6E1;
+$color-secondary-2:#feca57;
+
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #767676;
+$color-grey-light-3:#EDF1F5;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+// FONT VARIABLES
+$font-primary: 'Montserrat';
+$font-display: 'Open Sans';
+
+
+// RESPONSIVE BREAKPOINTS 
+$bp-largrest0: 81em;  // 1300px
+$bp-largest: 75em;  // 1200px
+$bp-large: 65.6em;  // 1000px
+$bp-medium : 50em;  // 800px
+$bp-small : 37.5em; // 600px;
+
+// MARGIN BOTTOM 
+
+.mb-sm{
+    margin-bottom: 2rem;
+}
+.mb-md{
+    margin-bottom: 3rem;
+}
+.mb-lg{
+    margin-bottom: 4rem;
+}
+.mb-hg{
+    margin-bottom: 8rem;
+}
+
+

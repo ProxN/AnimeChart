@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @media only screen and (max-width:$bp-largest) {
+        font-size: 50%;
+    }
+}
+body{
+    font-family: $font-primary;
+    font-weight: 300;
+    color: $color-grey-dark-2;
+    line-height: 1.6;
+    background-color: $color-grey-light-3;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}

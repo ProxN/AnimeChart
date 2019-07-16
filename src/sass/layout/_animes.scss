@@ -1,0 +1,152 @@
+.animes {
+    grid-column: col-start 2 / col-end 9;
+    grid-row: 2 / 3;
+    margin: 6rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(34rem, 46rem));
+    grid-template-rows: repeat(auto-fill, 290px);
+    grid-column-gap: 3rem;
+
+}
+
+.anime {
+
+    &__card {
+
+        background: white;
+        display: grid;
+        border-radius: 3px;
+        box-shadow: 1rem 1rem 2rem rgba(#000, 0.1);
+        grid-template-columns: 190px auto;
+        overflow: hidden;
+        position: relative;
+        
+        &--pic {
+            width: 100%;
+            grid-row: 1 / span 3;
+            grid-column: 1 / 2;
+        }
+
+        &--ep{
+            position: absolute;
+            background: red;
+            z-index:40;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $color-grey-light-1;
+            background-color: $color-primary;
+            
+            right: 0;
+            top: 0;
+            
+
+        }
+
+        &--title {
+            text-align: center;
+            padding: .5rem 1rem;
+            border-bottom: 1px solid #e5e5e5;
+            margin: 0 .5rem;
+            a:link,
+            a:visited {
+                font-size: 1.6rem;
+
+                color: #3498db;
+                font-weight: 500;
+                text-decoration: none;
+                font-family: $font-primary;
+                display: inline-block;
+                
+            }
+        }
+
+        &--air {
+            background-image: linear-gradient(rgba($color-primary, .9), rgba($color-primary-dark, .8));
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            padding: 1rem;
+            height: 30px;
+            color: $color-grey-light-1;
+            font-size: 1.5rem;
+            z-index: 20;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $font-display;
+        }
+
+
+        &--body{
+            display: grid;
+            grid-template-rows: repeat(4,min-content);
+            overflow-y: scroll;
+           
+        }
+
+
+        &--date{
+            grid-row: 1 / 2;
+            font-size: 1.3rem;
+            font-family: $font-display;
+            text-align: center;
+            font-weight: 300;
+            color: $color-grey-light-2;
+            border-bottom: 1px solid #e0e0e0;
+            padding: .5rem 0;
+            margin: 0 .5rem;
+        }
+
+
+        &--meta{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            padding: .5rem;
+            align-items: center;
+            border-bottom: 1px solid #e5e5e5;
+            margin: 0 .5rem;
+        }
+
+        &--source{
+            font-size: 1.4rem;
+            color: $color-grey-light-2;
+
+        }
+       
+        &--studio{
+            
+            a:link,
+            a:visited{
+                font-size: 1.4rem;
+
+                color: #3498db;
+                font-weight: 500;
+                text-decoration: none;
+                font-family: $font-primary;
+                display: inline-block;
+            }
+           
+        }
+
+        &--synposis{
+
+           
+            padding: 1rem;
+            word-break: break-word;
+            
+            p{
+                font-size: 1.3rem;
+                font-family: $font-display;
+                color: $color-grey-dark-2;
+                font-weight: 400;
+                line-height: 2;
+            }
+        }
+    }
+
+}
