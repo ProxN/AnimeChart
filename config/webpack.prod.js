@@ -11,7 +11,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(common, {
     mode:'production',
-    assetsPublicPath: '/AnimeChart',
     output:{
         filename: 'js/[name].[contentHash].js',
         path: path.resolve(__dirname, "../dist")
