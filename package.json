@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.dev.js --open",
-    "build": "webpack --config config/webpack.prod.js"
+    "build": "webpack --config config/webpack.prod.js",
+    "delopy" :"gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "clean-webpack-plugin": "^3.0.0",
+    "gh-pages": "^2.0.1",
     "lodash": "^4.17.14",
     "mini-css-extract-plugin": "^0.7.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1"
