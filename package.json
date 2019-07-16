@@ -6,11 +6,12 @@
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.dev.js --open",
     "build": "webpack --config config/webpack.prod.js",
-    "delopy" :"gh-pages -d dist"
+    "delopy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://ProxN.github.io/AnimeChart",
   "devDependencies": {
     "css-loader": "^3.0.0",
     "file-loader": "^4.0.0",
